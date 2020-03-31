@@ -5,8 +5,8 @@ description: Know your System Administrator
 categories:
     - 转载
 tags:
-    - humor
-    - code
+    - 搞笑
+    - GNU
 ---
 
 (A field guide)

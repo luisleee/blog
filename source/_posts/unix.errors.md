@@ -5,8 +5,9 @@ description: Unix Error Messages
 categories:
     - 转载
 tags:
-    - humor
-    - code
+    - 搞笑
+    - GNU
+    - Unix
 ---
 
 (% represents the csh, $ represents the bourne shell)

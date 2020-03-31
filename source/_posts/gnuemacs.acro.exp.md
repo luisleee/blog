@@ -5,8 +5,9 @@ description: Some funny acronym expansions of Emacs
 categories:
     - 转载
 tags:
-    - humor
-    - code
+    - 搞笑
+    - GNU
+    - emacs
 ---
 
 -   Escape-Meta-Alt-Control-Shift

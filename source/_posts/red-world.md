@@ -3,7 +3,9 @@ title: 红色世界
 date: 2020-02-25 08:36:26
 description: 革命无罪，造反有理。
 tags:
-  - 胡说
+    - 胡说
+categories:
+    - 想法
 ---
 
 

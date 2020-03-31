@@ -5,8 +5,8 @@ description: Intro to ED
 categories:
     - 转载
 tags:
-    - humor
-    - code
+    - 搞笑
+    - GNU
 ---
 
 When I log into my Xenix system with my 110 baud teletype, both vi and Emacs are just too damn slow. They print useless messages like, ‘C-h for help’ and ‘“foo” File is read only’. So I use the editor that doesn't waste my VALUABLE time.

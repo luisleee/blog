@@ -5,8 +5,8 @@ description:  The way people code “Hello World” varies depending on their ag
 categories:
     - 转载
 tags:
-    - humor
-    - code
+    - 搞笑
+    - GNU
 ---
 
 How the way people code “Hello World” varies depending on their age and job:

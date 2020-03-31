@@ -5,8 +5,8 @@ description: Define your terms for software releases
 categories:
     - 转载
 tags:
-    - humor
-    - code
+    - 搞笑
+    - GNU
 ---
 
 Define your terms for software releases:
