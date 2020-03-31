@@ -5,8 +5,9 @@ description: Brainfuck code of Ed
 categories:
     - 转载
 tags:
-    - humor
-    - code
+    - 搞笑
+    - GNU
+    - ed
 ---
 
 This is a piece of source code like Ed in Brainfuck language:

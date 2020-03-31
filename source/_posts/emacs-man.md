@@ -5,8 +5,9 @@ description: Emacs man page from Plan9
 categories:
     - 转载
 tags:
-    - humor
-    - code
+    - 搞笑
+    - GNU
+    - emacs
 ---
 ```
 NAME

@@ -5,8 +5,8 @@ description: The recursive acronym “GNU's Not Unix” harbors a stack overflow
 categories:
     - 转载
 tags:
-    - humor
-    - code
+    - 搞笑
+    - GNU
 ---
 
 The recursive acronym “GNU's Not Unix” harbors a stack overflow bug that can cause the English language to crash and may allow arbitrary linguistic commands to be executed, according to a message posted on gnu.acronym.bug this morning. All sites running GNU software are urged to apply a temporary patch which changes the expansion of the acronym to “GNU Needs Users”, until a permanent patch is available. GNU project founder Richard M. Stallman is currently hunting the error in the acronym he created over a decade ago.

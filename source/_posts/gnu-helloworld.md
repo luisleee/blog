@@ -5,8 +5,8 @@ description:  The way people code “Hello World” varies depending on their ag
 categories:
     - 转载
 tags:
-    - humor
-    - code
+    - 搞笑
+    - GNU
 ---
 
 How the way people code “Hello World” varies depending on their age and job:
@@ -45,7 +45,7 @@ void main(void)
     char *message[] = {"Hello ", "World"};
     int i;
     for(i = 0; i < 2; ++i)
-    printf("%s", message[i]);
+        printf("%s", message[i]);
     printf("\n");
 }
 ```

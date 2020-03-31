@@ -5,8 +5,9 @@ description: Ed source code
 categories:
     - 转载
 tags:
-    - humor
-    - code
+    - 搞笑
+    - GNU
+    - ed
 ---
 
 ```

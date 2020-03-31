@@ -5,8 +5,8 @@ description: THE POWER USER'S GUIDE TO POWER USERS
 categories:
     - 转载
 tags:
-    - humor
-    - code
+    - 搞笑
+    - GNU
 ---
 
 THE POWER USER'S GUIDE TO POWER USERS 
