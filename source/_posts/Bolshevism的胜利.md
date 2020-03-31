@@ -1,6 +1,7 @@
 ---
 title: Bolshevism的胜利
 date: 2020-03-30
+description: 李大钊《Bolshevism的胜利》
 tags:
     - 革命
 categories:

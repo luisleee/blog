@@ -1,6 +1,7 @@
 ---
 title: Ed, man! !man ed
 date: 2020-03-31
+description: Intro to ED
 categories:
     - 转载
 tags:
@@ -21,7 +22,6 @@ SYNOPSIS
      ed [ - ] [ -x ] [ name ]
 DESCRIPTION
      Ed is the standard text editor.
----
 ```
 Computer Scientists love ed, not just because it comes first alphabetically, but because it's the standard. Everyone else loves ed because it's ED!
 
@@ -62,7 +62,6 @@ eat flaming death
 ?
 ^D
 ?
----
 ```
 Note the consistent user interface and error reportage. Ed is generous enough to flag errors, yet prudent enough not to overwhelm the novice with verbosity.
 

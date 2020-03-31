@@ -1,6 +1,7 @@
 ---
 title: BrainFuck
 date: 2020-03-31
+description: Brainfuck code of Ed
 categories:
     - 转载
 tags:

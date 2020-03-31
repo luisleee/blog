@@ -1,6 +1,7 @@
 ---
 title: Software Terms
 date: 2020-03-31
+description: Define your terms for software releases
 categories:
     - 转载
 tags:

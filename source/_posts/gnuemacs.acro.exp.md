@@ -1,6 +1,7 @@
 ---
 title: Some funny acronym expansions of Emacs
 date: 2020-03-31
+description: Some funny acronym expansions of Emacs
 categories:
     - 转载
 tags:

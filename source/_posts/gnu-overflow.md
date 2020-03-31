@@ -1,6 +1,7 @@
 ---
 title: GNU-Overflow
 date: 2020-03-31
+description: The recursive acronym “GNU's Not Unix” harbors a stack overflow bug that can cause the English language to crash and may allow arbitrary linguistic commands to be executed, according to a message posted on gnu.acronym.bug this morning!
 categories:
     - 转载
 tags:

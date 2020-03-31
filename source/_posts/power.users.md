@@ -1,6 +1,7 @@
 ---
 title: Power Users
 date: 2020-03-31
+description: THE POWER USER'S GUIDE TO POWER USERS
 categories:
     - 转载
 tags:
@@ -32,19 +33,11 @@ word '<enter>', or the quotes.")
 Power Users get their companies to buy them 130MHz 80586 PS/4s with
 100MB RAM and 5-gigabyte optical drives, which they bring home:
 
-   - to run Lotus 1-2-3G spreadsheets, producing PostScript graphs
-     of their mortgage repayments;
+- to run Lotus 1-2-3G spreadsheets, producing PostScript graphsof their mortgage repayments;
      
-   - to DTP stern memos forbidding their Real Programmers from using
-     unregistered shareware and PD utilities at work. For this task,
-     they get their computer upgraded with a 4096x4096, 12 billion colour
-     hyper-VGA video display, and the memo employs a minimum of seven
-     different fonts, plus bolding and italics, with at least five
-     revisions to correct spelling errors, and to order the Cc: list
-     in the most politically acceptable manner), and
+- to DTP stern memos forbidding their Real Programmers from using unregistered shareware and PD utilities at work. For this task,they get their computer upgraded with a 4096x4096, 12 billion colour hyper-VGA video display, and the memo employs a minimum of seven different fonts, plus bolding and italics, with at least five revisions to correct spelling errors, and to order the Cc: list in the most politically acceptable manner), and
 
-    - to play pirate copies of Tetris and PC-Golf which they haven't
-      realised are infected with a virus.
+- to play pirate copies of Tetris and PC-Golf which they haven't realised are infected with a virus.
 
 Power Users scold their children for referring to their machines as
 personal computers. "It's NOT a PC, Jimmy, it's my Professional

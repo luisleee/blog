@@ -1,6 +1,7 @@
 ---
 title: Know your System Administrator
 date: 2020-03-31
+description: Know your System Administrator
 categories:
     - 转载
 tags:
