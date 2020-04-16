@@ -102,3 +102,6 @@ serach:
   field: post
   type: html
   limit: 100
+
+# Use image
+post_asset_folder: true
