@@ -1,5 +1,6 @@
 ---
 title: 欢迎投稿!
+date: 2020-04-17
 description: 投稿告示
 categories:
     - 公告
