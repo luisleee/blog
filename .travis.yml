@@ -23,7 +23,7 @@ install:
     - npm install
 script:
     - hexo clean
-    - hexo generate --debug
+    - hexo generate
 after_success:
     - cd ./public
     - git init
