@@ -1,7 +1,9 @@
 # 使用语言
 language: node_js
 # node版本
-node_js: stable
+node_js: "12.16.3"
+
+dist: bionic
 
 # 设置只监听哪个分支
 branches:
@@ -21,7 +23,7 @@ install:
     - npm install
 script:
     - hexo clean
-    - hexo generate
+    - hexo generate --debug
 after_success:
     - cd ./public
     - git init
