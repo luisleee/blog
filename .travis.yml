@@ -1,7 +1,9 @@
 # 使用语言
 language: node_js
 # node版本
-node_js: stable
+node_js: "12.16.3"
+
+dist: bionic
 
 # 设置只监听哪个分支
 branches:
@@ -27,4 +29,4 @@ after_success:
     - git init
     - git add --all .
     - git commit -m "Travis CI Auto Builder"
-    - git push --force https://$GITHUB_TOKEN@github.com/luisleee/blog.git master
+    - git push --force https://$GITHUB_TOKEN@github.com/luisleee/luisleee.github.io.git master
