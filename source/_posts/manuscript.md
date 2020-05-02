@@ -10,5 +10,5 @@ categories:
 
 投稿途径:
 
-- [GitHub发issue](https://github.com/luisleee/blog/issue)
+- [GitHub发issue](https://github.com/luisleee/luisleee.github.io/issue)
 - [邮箱](mailto://a7q1f2t3s9t6l4t5@oi-14.slack.com)
