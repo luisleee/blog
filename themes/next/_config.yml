@@ -124,6 +124,7 @@ menu:
   tags: /tags/ || tags
   categories: /categories/ || th
   archives: /archives/ || archive
+  games: /games/ || gamepad
   rss: /atom.xml || rss
 
 # Enable / Disable menu icons / item badges.
