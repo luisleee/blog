@@ -85,6 +85,7 @@ function unbind() {
             blocks[i][j]
                 .getElement()
                 .removeEventListener("mouseup", handlers[i][j], false);
+            
         }
     }
 }
@@ -103,6 +104,8 @@ function start() {
         handlers[i] = [];
         for (let j = 0; j < 9; j++) {
             blocks[i][j] = new Block(i, j, "unknow", false);
+            blocks[i][j].getElement().className = "grid-cell";
+            blocks[i][j].getElement().style.cssText = "";
             paint(i, j);
         }
     }
@@ -242,18 +245,26 @@ function paint(row, col) {
     var char = "";
 
     if (block.state === "unknow") {
-        char = "■";
+        char = " ";
+        element.classList.remove("flag");
+        element.classList.add("unknow");
     } else if (block.state === "flag") {
         char = "⚑";
+        element.classList.remove("unknow");
+        element.classList.add("flag");
     } else if (block.state === "known") {
+        element.classList.remove("flag");
+        element.classList.remove("unknow");
         var val = getVal(row, col);
-        if (val === 0) {
-            char = "□";
-        } else {
-            char = val.toString();
-        }
         if (block.hasBomb) {
             char = "❂";
+            element.classList.add("bomb");
+        } else if (val === 0) {
+            char = " ";
+            element.classList.add("empty");
+        } else {
+            char = val.toString();
+            element.classList.add("color-" + char);
         }
     }
 

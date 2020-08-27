@@ -1,24 +1,74 @@
 #grid-container {
-    display: table;
-    border: 2px solid;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border: 3px solid;
+    width: 300px;
+    height: 450px;
 }
 
 .grid-row {
-    display: table-row;
+    display: flex;
+    flex-direction: row;
+    flex: 1;
 }
 
 .grid-cell {
-    display: table-cell;
-    border-collapse: collapse;
-    height: 20px;
-    width: 20px;
+    flex: 1;
     text-anchor: middle;
     text-align: center;
-    padding: 0;
-    border: 2px solid;
-    margin: 5px;
+    border: 3px black solid;
 }
 
 #again {
     display: none;
+}
+
+.unknow {
+    background-color: lightgray;
+    color: lightgray;
+    border-color: black;
+}
+
+.flag {
+    background-color: lightgray;
+    color: black;
+}
+
+.empty {
+    background-color: #eeeeee;
+    color: #eeeeee;
+}
+
+.color-1,
+.color-2,
+.color-3,
+.color-4,
+.color-5,
+.bomb {
+    background-color: #eeeeee;
+}
+
+.color-1 {
+    color: blue;
+}
+
+.color-2 {
+    color: green;
+}
+
+.color-3 {
+    color: red;
+}
+
+.color-4 {
+    color: darkblue;
+}
+
+.color-5 {
+    color: maroon;
+}
+
+.bomb {
+    color: red;
 }
