@@ -3,8 +3,8 @@
     flex-direction: column;
     justify-content: space-between;
     border: 3px solid;
-    width: 300px;
-    height: 450px;
+    width: 500px;
+    height: 500px;
 }
 
 .grid-row {
@@ -15,9 +15,11 @@
 
 .grid-cell {
     flex: 1;
-    text-anchor: middle;
-    text-align: center;
     border: 3px black solid;
+    font-family: Consolas, Courier, monospace;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 50px;
 }
 
 #again {

@@ -20,11 +20,15 @@ Block.prototype.getElement = function () {
 
 function check() {
     var num = 0;
+    var known = 0;
     for (let i = 0; i < 9; i++) {
         for (let j = 0; j < 9; j++) {
             let block = blocks[i][j];
             if (block.hasBomb && block.state === "flag") {
                 num++;
+            }
+            if (!block.hasBomb && block.state === "known") {
+                known++;
             }
             if (block.hasBomb && block.state === "known") {
                 over();
@@ -32,7 +36,7 @@ function check() {
             }
         }
     }
-    if (num === 10) {
+    if (num === 10 || known === 71) {
         win();
     }
 }
@@ -85,7 +89,6 @@ function unbind() {
             blocks[i][j]
                 .getElement()
                 .removeEventListener("mouseup", handlers[i][j], false);
-            
         }
     }
 }
@@ -95,6 +98,7 @@ function restart() {
     blocks = [];
     first = true;
     document.getElementById("time").innerText = "00:00";
+    document.getElementById("status").innerText = "";
     start();
 }
 
@@ -139,7 +143,7 @@ function hideAgain() {
 
 function win() {
     unbind();
-    alert("You Win!");
+    document.getElementById("status").innerText = "You Win!";
     showAgain();
     clearInterval(interval);
 }
@@ -154,7 +158,7 @@ function over() {
         }
     }
     unbind();
-    alert("Game Over");
+    document.getElementById("status").innerText = "Game Over";
     showAgain();
     clearInterval(interval);
 }
@@ -328,8 +332,9 @@ function getFlags(row, col) {
 
 var btn = document.getElementById("again");
 btn.addEventListener("click", restart, false);
+
 // Disable popup
-document.addEventListener(
+document.getElementById("grid-container").addEventListener(
     "contextmenu",
     function (event) {
         event.preventDefault();
