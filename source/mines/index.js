@@ -21,9 +21,13 @@ Block.prototype.getElement = function () {
 function check() {
     var num = 0;
     var known = 0;
+    var flags = 0;
     for (let i = 0; i < 9; i++) {
         for (let j = 0; j < 9; j++) {
             let block = blocks[i][j];
+            if (block.state === "flag") {
+                flags++;
+            }
             if (block.hasBomb && block.state === "flag") {
                 num++;
             }
@@ -36,7 +40,7 @@ function check() {
             }
         }
     }
-    if (num === 10 || known === 71) {
+    if ((num === 10 && flags === 10) || known === 71) {
         win();
     }
 }
