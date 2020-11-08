@@ -1,6 +1,6 @@
 // Set up canvas
 var canvas = document.getElementById("canvas");
-var ctx = canvas.getContext("2d");
+var context = canvas.getContext("2d");
 
 // Get the width and height from the canvas element
 var width = canvas.width;
@@ -18,11 +18,11 @@ var intervalId = null;
 
 // Draw the border
 function drawBorder() {
-    ctx.fillStyle = "Gray";
-    ctx.fillRect(0, 0, width, blockSize);
-    ctx.fillRect(0, height - blockSize, width, blockSize);
-    ctx.fillRect(0, 0, blockSize, height);
-    ctx.fillRect(width - blockSize, 0, blockSize, height);
+    context.fillStyle = "Gray";
+    context.fillRect(0, 0, width, blockSize);
+    context.fillRect(0, height - blockSize, width, blockSize);
+    context.fillRect(0, 0, blockSize, height);
+    context.fillRect(width - blockSize, 0, blockSize, height);
 }
 
 function showAgain() {
@@ -47,33 +47,33 @@ function hideInfo() {
 
 // Draw the score in the top-left corner
 function drawScore() {
-    ctx.font = "20px Courier";
-    ctx.fillStyle = "Black";
-    ctx.textAlign = "left";
-    ctx.textBaseline = "top";
-    ctx.fillText("Score: " + score, blockSize, blockSize);
+    context.font = "20px Consolas";
+    context.fillStyle = "Black";
+    context.textAlign = "left";
+    context.textBaseline = "top";
+    context.fillText("Score: " + score, blockSize, blockSize);
 }
 
 // Clear the interval and display Game Over text
 function gameOver() {
     clearInterval(intervalId);
-    ctx.font = "60px Courier";
-    ctx.fillStyle = "Black";
-    ctx.textAlign = "center";
-    ctx.textBaseline = "middle";
-    ctx.fillText("Game Over", width / 2, height / 2);
+    context.font = "60px Consolas";
+    context.fillStyle = "Black";
+    context.textAlign = "center";
+    context.textBaseline = "middle";
+    context.fillText("Game Over", width / 2, height / 2);
     showAgain();
     body.removeEventListener("keydown", listener, false);
 }
 
 // Draw a circle (using the function from Chapter 14)
 function circle(x, y, radius, fillCircle) {
-    ctx.beginPath();
-    ctx.arc(x, y, radius, 0, Math.PI * 2, false);
+    context.beginPath();
+    context.arc(x, y, radius, 0, Math.PI * 2, false);
     if (fillCircle) {
-        ctx.fill();
+        context.fill();
     } else {
-        ctx.stroke();
+        context.stroke();
     }
 }
 
@@ -87,15 +87,15 @@ function Block(col, row) {
 Block.prototype.drawSquare = function (color) {
     var x = this.col * blockSize;
     var y = this.row * blockSize;
-    ctx.fillStyle = color;
-    ctx.fillRect(x, y, blockSize, blockSize);
+    context.fillStyle = color;
+    context.fillRect(x, y, blockSize, blockSize);
 };
 
 // Draw a circle at the block's location
 Block.prototype.drawCircle = function (color) {
     var centerX = this.col * blockSize + blockSize / 2;
     var centerY = this.row * blockSize + blockSize / 2;
-    ctx.fillStyle = color;
+    context.fillStyle = color;
     circle(centerX, centerY, blockSize / 2, true);
 };
 
@@ -214,7 +214,7 @@ var snake = new Snake();
 var apple = new Apple();
 
 function loop() {
-    ctx.clearRect(0, 0, width, height);
+    context.clearRect(0, 0, width, height);
     drawScore();
     snake.move();
     snake.draw();
@@ -248,11 +248,10 @@ canvas.addEventListener("click", clickStart, false);
 // The keydown handler for handling direction key presses
 var body = document.getElementById("body");
 function listener(event) {
-    event.preventDefault();
     var newDirection = directions[event.key];
-    console.log(newDirection);
     if (newDirection !== undefined) {
         snake.setDirection(newDirection);
+        event.preventDefault();
     }
 }
 body.addEventListener("keydown", listener, false);
