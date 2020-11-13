@@ -170,7 +170,7 @@ Gun.prototype.draw = function () {
     context.fillRect(this.x - 2, height - 35, 5, 5);
 };
 
-Gun.prototype.shot = function () {
+Gun.prototype.shoot = function () {
     bullets.push(new Bullet(this.x, height - 30));
     shots++;
 };
@@ -277,7 +277,7 @@ function listener(event) {
         var delta = new Date() - lastShot;
         if (delta >= 500) {
             lastShot = new Date();
-            gun.shot();
+            gun.shoot();
         }
     } else if (event.key === "ArrowLeft") {
         gun.left();
