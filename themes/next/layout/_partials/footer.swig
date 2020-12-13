@@ -70,19 +70,4 @@
   </div>
 {%- endif %}
 
-<!-- Default Statcounter code for My Blog https://luisleee.github.io -->
-<script type="text/javascript">
-var sc_project=12387120; 
-var sc_invisible=1; 
-var sc_security="d99faa5d"; 
-var sc_https=1; 
-var sc_remove_link=1; 
-</script>
-<script type="text/javascript"
-src="https://www.statcounter.com/counter/counter.js" async></script>
-<noscript><div class="statcounter"><img class="statcounter"
-src="https://c.statcounter.com/12387120/0/d99faa5d/1/" alt="Web
-Analytics"></div></noscript>
-<!-- End of Statcounter Code -->
-
 {{- next_inject('footer') }}
