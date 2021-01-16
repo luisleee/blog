@@ -8,7 +8,7 @@ on:
 jobs:
   build:
     name: Generate blog
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-20.04
 
     steps:
       - name: Checkout
@@ -21,6 +21,11 @@ jobs:
         with:
           node-version: "12"
 
+      - name: Setup git
+        run: |
+          git config --global user.name "luisleee"
+          git config --global user.email "luisleee@126.com"
+
       - name: Cache node modules
         uses: actions/cache@v2
         env:
@@ -32,11 +37,6 @@ jobs:
             ${{ runner.os }}-build-${{ env.cache-name }}-
             ${{ runner.os }}-build-
             ${{ runner.os }}-
-
-      - name: Setup git
-        run: |
-          git config --global user.name "luisleee"
-          git config --global user.email "luisleee@126.com"
 
       - name: Install hexo-cli
         run: |
