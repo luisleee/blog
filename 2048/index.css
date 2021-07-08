@@ -1,0 +1,102 @@
+#grid-container {
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    border: 3px black solid;
+}
+
+.grid-row {
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+}
+
+.grid-cell {
+    flex: 1;
+    border: 3px black solid;
+    line-height: 125px;
+    width: 125px;
+    height: 125px;
+    text-align: center;
+    font-family: Consolas, Courier, monospace;
+    background-color: rgba(238, 228, 218, 0.35);
+    font-size: 55px;
+}
+
+#score-text {
+    font-family: Consolas, Courier, monospace;
+}
+
+#status {
+    font-family: Consolas, Courier, monospace;
+}
+
+#again {
+    display: none;
+}
+
+.new {
+    color: red;
+}
+
+.val-0 {
+    background-color: lightgray;
+}
+
+.val-2 {
+    background: #eee4da;
+}
+
+.val-4 {
+    background: #ede0c8;
+}
+
+.val-8 {
+    color: #f9f6f2;
+    background: #f2b179;
+}
+
+.val-16 {
+    color: #f9f6f2;
+    background: #f59563;
+}
+
+.val-32 {
+    color: #f9f6f2;
+    background: #f67c5f;
+}
+
+.val-64 {
+    color: #f9f6f2;
+    background: #f65e3b;
+}
+
+.val-128 {
+    color: #f9f6f2;
+    background: #edcf72;
+
+    font-size: 45px;
+}
+.val-256 {
+    color: #f9f6f2;
+    background: #edcc61;
+
+    font-size: 45px;
+}
+.val-512 {
+    color: #f9f6f2;
+    background: #edc850;
+
+    font-size: 45px;
+}
+.val-1024 {
+    color: #f9f6f2;
+    background: #edc53f;
+
+    font-size: 35px;
+}
+.val-2048 {
+    color: #f9f6f2;
+    background: #edc22e;
+    font-size: 35px;
+}

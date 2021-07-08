@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 5.4.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon.ico">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon.ico">
+  <link rel="mask-icon" href="/images/favicon.ico" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/font-awesome.min.css">
+
+<script id="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"luisleee.github.io","root":"/","scheme":"Mist","version":"7.7.1","exturl":false,"sidebar":{"position":"right","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":true,"show_result":true,"style":"flat"},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":true,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":"valine","storage":true,"lazyload":false,"nav":null,"activeClass":"valine"},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"path":"search.xml","motion":{"enable":false,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
+  </script>
+
+  <meta name="description" content="一段混乱的历史">
+<meta property="og:type" content="article">
+<meta property="og:title" content="浏览器大战史">
+<meta property="og:url" content="https://luisleee.github.io/posts/%E6%B5%8F%E8%A7%88%E5%99%A8%E5%A4%A7%E6%88%98%E5%8F%B2/index.html">
+<meta property="og:site_name" content="luisleee&#39;s blog">
+<meta property="og:description" content="一段混乱的历史">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://luisleee.github.io/posts/%E6%B5%8F%E8%A7%88%E5%99%A8%E5%A4%A7%E6%88%98%E5%8F%B2/BrowserUsageShare.png">
+<meta property="article:published_time" content="2020-08-29T00:00:00.000Z">
+<meta property="article:modified_time" content="2020-08-29T00:00:00.000Z">
+<meta property="article:author" content="luisleee">
+<meta property="article:tag" content="Web">
+<meta property="article:tag" content="历史">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://luisleee.github.io/posts/%E6%B5%8F%E8%A7%88%E5%99%A8%E5%A4%A7%E6%88%98%E5%8F%B2/BrowserUsageShare.png">
+
+<link rel="canonical" href="https://luisleee.github.io/posts/%E6%B5%8F%E8%A7%88%E5%99%A8%E5%A4%A7%E6%88%98%E5%8F%B2/">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome: false,
+    isPost: true
+  };
+</script>
+
+  <title>浏览器大战史 | luisleee's blog</title>
+  
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+<link rel="alternate" href="/atom.xml" title="luisleee's blog" type="application/atom+xml">
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-meta">
+
+    <div>
+      <a href="/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">luisleee's blog</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+  </div>
+
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+</div>
+
+
+<nav class="site-nav">
+  
+  <ul id="menu" class="menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="fa fa-fw fa-home"></i>首页</a>
+
+  </li>
+        <li class="menu-item menu-item-tags">
+
+    <a href="/tags/" rel="section"><i class="fa fa-fw fa-tags"></i>标签</a>
+
+  </li>
+        <li class="menu-item menu-item-categories">
+
+    <a href="/categories/" rel="section"><i class="fa fa-fw fa-th"></i>分类</a>
+
+  </li>
+        <li class="menu-item menu-item-archives">
+
+    <a href="/archives/" rel="section"><i class="fa fa-fw fa-archive"></i>归档</a>
+
+  </li>
+        <li class="menu-item menu-item-games">
+
+    <a href="/games/" rel="section"><i class="fa fa-fw fa-gamepad"></i>游戏</a>
+
+  </li>
+        <li class="menu-item menu-item-rss">
+
+    <a href="/atom.xml" rel="section"><i class="fa fa-fw fa-rss"></i>订阅</a>
+
+  </li>
+  </ul>
+
+</nav>
+</div>
+    </header>
+
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+  <div class="reading-progress-bar"></div>
+  <a role="button" class="book-mark-link book-mark-link-fixed"></a>
+
+  <a href="https://github.com/luisleee" class="github-corner" title="Follow me on GitHub" aria-label="Follow me on GitHub" rel="noopener" target="_blank"><svg width="80" height="80" viewBox="0 0 250 250" aria-hidden="true"><path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a>
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content">
+            
+
+  <div class="posts-expand">
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block " lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://luisleee.github.io/posts/%E6%B5%8F%E8%A7%88%E5%99%A8%E5%A4%A7%E6%88%98%E5%8F%B2/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="luisleee">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="luisleee's blog">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          浏览器大战史
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2020-08-29 00:00:00" itemprop="dateCreated datePublished" datetime="2020-08-29T00:00:00+00:00">2020-08-29</time>
+            </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E5%8E%9F%E5%88%9B/" itemprop="url" rel="index">
+                    <span itemprop="name">原创</span>
+                  </a>
+                </span>
+            </span>
+
+          
+            <span id="/posts/%E6%B5%8F%E8%A7%88%E5%99%A8%E5%A4%A7%E6%88%98%E5%8F%B2/" class="post-meta-item leancloud_visitors" data-flag-title="浏览器大战史" title="阅读次数">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-eye"></i>
+              </span>
+              <span class="post-meta-item-text">阅读次数：</span>
+              <span class="leancloud-visitors-count"></span>
+            </span>
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="fa fa-comment-o"></i>
+      </span>
+      <span class="post-meta-item-text">Valine：</span>
+    
+    <a title="valine" href="/posts/%E6%B5%8F%E8%A7%88%E5%99%A8%E5%A4%A7%E6%88%98%E5%8F%B2/#valine-comments" itemprop="discussionUrl">
+      <span class="post-comments-count valine-comment-count" data-xid="/posts/%E6%B5%8F%E8%A7%88%E5%99%A8%E5%A4%A7%E6%88%98%E5%8F%B2/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  
+            <div class="post-description">一段混乱的历史</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+        <h1 id="序曲"><a href="#序曲" class="headerlink" title="序曲"></a>序曲</h1><p>1989年，伯纳斯-李发明了万维网。故事从这里开始。1991年，他发布了第一个浏览器。</p>
+<p>到1993年时已经有了了许多浏览器。其中最具影响力的是NSCA发明的Mosaic浏览器。</p>
+<p>1994年，Mosaic的开发者之一——马克·安德森成立了名为Mosaic Communications Corporation的公司，开发出了一个名为Mosaic Netscape的浏览器。后来因为与NSCA的法律问题，公司改名叫做Netscape Communications Corporation，浏览器改名叫做Netscape Navigator。这家公司就是下文要提到的网景公司。</p>
+<h1 id="第一次浏览器大战-1995-2001"><a href="#第一次浏览器大战-1995-2001" class="headerlink" title="第一次浏览器大战(1995-2001)"></a>第一次浏览器大战(1995-2001)</h1><p>网景浏览器以它的实用性和稳定性快速统领了市场，前途一片大好。</p>
+<p>到了1995年中期，人们开始注意到互联网，此时网景已经主导了Web的标准。</p>
+<p>8月，微软插手了这片领域。微软推出了一款浏览器，名叫Internet Explorer，也就是IE浏览器。三个月后，IE 2.0发布了，微软与网景的竞争开始了，大战爆发。</p>
+<p>在这段时间里，浏览器间开始了军备竞赛。它们的军备竞赛简直到了一种疯狂的地步。它们都追求更多的功能，而把修复错误放在第二位。这导致了许许多多的问题，包括死机、安全漏洞。这给用户带来了很多困扰。它们按照自己制定的标准走，我行我素，造成了互联网页面标准的混乱，让开发者不得不为不同浏览器编写不同的页面。</p>
+<p>1996年，IE3推出。它成为了第一款支持编程语言和CSS的浏览器，使它的市场份额开始猛追Netscape。</p>
+<p>1997年，IE4推出。这一个版本对大战起到了至关重要的作用。由于它在支持W3C标准上比Netscape 4.0做的要更好，也可以动态加载网页，还可以改变图片和文字的位置，并且支持MP3音频，IE的市场份额提升得更多了。最重要的是，它随Windows系统捆绑安装。</p>
+<p>IE4发布后次日，Netscape的员工们在前方的草坪上发现了IE的大“e”标志，上面写着“From the IE team … We Love You”。Netscape员工立刻把巨型标志推翻，并放上其吉祥物Mozilla恐龙，恐龙手上纸牌写着“Netscape 72, Microsoft 18”，代表当时的浏览器市场占有率。谁也没有想到，IE的市场份额很快就超过了网景。</p>
+<p>微软捆绑销售的举措增加了大量用户，也导致了当年著名的1998年美国诉微软案，但微软撑过了官司。网景的财路被微软断掉了，它没有那么充裕的资金来对抗微软，再加之网景公司错误的商业决策，它在1998年底被IE击败了。</p>
+<p>大势已去，AOL将以42亿美元收购网景。在被收购前的这段时间里，一位公司的管理层人员读到了艾瑞克·雷蒙德所著的《大教堂与集市》。这使他们开始考虑开源这一条路。随后，它发布了Communicator的源代码。它被托付给了刚刚成立的Mozilla基金会——一个由社区驱动的非营利组织，以建立Netscape的接班人。</p>
+<p>网景败了。到了2002年，IE占据了96%的浏览器市场份额。IE以它那强大的背景战胜了Netscape和它的其他竞争对手。 正如网景总裁兼首席执行官吉姆·巴克斯代尔（Jim Barksdale）所言：“在战争中，很少有规模较小的部队战胜规模较大的部队……”。</p>
+<p>回头看这场大战，它给我们留下了许多东西。Netscape在竞争中开发出了JavaScript，它在日后成为了Web难以分割的一部分。这场大战给了后来的浏览器厂商许多经验教训。同时，这也是Web的一场浩劫。大战中，双方都开发了大量非标准的专有功能却不注重漏洞的修复，造成了浏览器的许多怪异的非标准行为。</p>
+<h1 id="第二次浏览器大战-2004-2017"><a href="#第二次浏览器大战-2004-2017" class="headerlink" title="第二次浏览器大战(2004-2017)"></a>第二次浏览器大战(2004-2017)</h1><p>网景被并购的第二天，Mozilla基金会成立。该基金会的目的是协调Mozilla未来的发展。他们彻底重写了Mozilla的代码。</p>
+<p>2001年，战胜的微软不紧不慢地发布了IE6。这是它这一年中仅有的一个版本。</p>
+<p>2002年，Mozilla 1.0发布。它快速地在开源社区内传播开来。网景涅槃了。同一年里，苹果在KDE项目的Konquerer浏览器中KHTML和KJS引擎的基础上，开发出了Webkit布局引擎。他们表示，这一引擎设计更简洁、更符合标准，使得基于它的开发更容易。它被应用进了Safari浏览器，在2003年随Mac OS X v10.3一同发布。</p>
+<p>2003年，微软宣布IE6 SP1以后不再提供独立于Windows下载的浏览器，未来更多的功能将与Windows Vista共同推出。6月13日，微软宣布停止Mac平台上对IE的支持。</p>
+<p>2004年4月，Mozilla基金会和Opera公司共同开发新的开放Web标准，成立了WHATWG工作小组，向W3C提交标准以供审批。Opera公司在浏览器战场上一直不显眼，但它的产品以创新的功能和轻巧但功能丰富而著称，它的移动版Opera Mini占据了移动端市场的大部分份额。但由于它是收费软件，所以它一直处于竞争中的不利地位。9月9日，基于Mozilla的Firefox浏览器推出1.0版本。同年，IE浏览器受到名为Download.ject的恶意软件攻击，在访问网页的时候就有可能被植入后门。人们开始注意到IE的安全性问题。随后，多家安全公司推荐用户使用更安全的Firefox浏览器。</p>
+<p>这段时间里，随着设备和浏览器的种类增多，要求页面有更好的兼容性，包括DOM和AJAX，标准被重新重视了起来。浏览器厂商不再鼓吹它们的专有扩展，开始根据对标准的支持来进行推广。</p>
+<p>2005年，Opera转为免费软件，它的市场份额有所上升。同年2月，微软宣布Windows XP中将会提供IE7，称其将提供更好的安全性。但微软并未就网页标准方面表态。</p>
+<p>2005年年底，IE的市场份额跌至85%。导致IE市场份额下滑主要原因IE较低的安全性和Firefox的竞争。</p>
+<p>2006年，Firefox和Opera的市场占有率持续增长，但增长速度有所放缓。Firefox的市场占有率接近了20%。这使微软感受到了深深的压力。6月20日，Opera 9发布，它是第一个通过Acid2测试的Windows浏览器。8月底，IE7的第一个候选版本发布。这包括选项卡式浏览，搜索栏，网络钓鱼过滤器以及对Web标准的改进支持（包括对PNG的完全支持），但这些都是Opera和Firefox早已实现的功能。10月18日，IE7发行。IE7发布几天之内下载量就达到了惊人的300万，但发行几小时后漏洞就被发现了，令人大失所望。Microsoft通过Windows Update将IE7作为高优先级更新分发给了正版Windows用户。但市场份额分析表明，IE7的普及速度很慢，Microsoft决定放弃对正版Windows的要求，并于2007年10月向所有Windows用户提供IE7。在随后的两年中，Microsoft开始开发IE8。Firefox随后在10月24日推出2.0版本。它包含了打开最近的标签页、崩溃时的会话存储、钓鱼过滤器和文本框的拼写检查等功能。这一时期，Firefox由于其“复杂的操作”和对IE的不兼容，导致了普通用户对其望而却步，市场占有率始终在16%和18%之间徘徊。战争进入了僵持阶段。</p>
+<p>2007年12月19日，微软宣布，IE8的内部版本已通过Acid2 CSS测试，这是最后一个通过Acid2测试的主要浏览器。</p>
+<p>2008年6月17日，Mozilla 3.0发布，包含性能改进和安全性更新。12月11日，Google投入了战斗。Google发布了Chrome浏览器的Windows版本，它使用了Webkit渲染引擎并使用了最快的JavaScript引擎——V8。不久，它的开源、跨平台版本Chromium发布。到了2009年，它已经占据了市场份额的3.6%。</p>
+<p>2009年，IE8发布。该版本包括改进的隐私保护，针对用于较旧浏览器的页面的兼容模式，以及对各种Web标准的改进支持。IE8在Acid3测试中得分为20/100，远低于当时的所有主要竞争对手。6月30日，Mozilla 3.5发布，提供了更深层次的性能优化，内置了对音频和视频的支持，增加了更多隐私保护功能。</p>
+<p>2009年年底，根据StatCounter的数据，非IE浏览器的市场份额在Netscape倒闭后首次超过了IE，并且Firefox 3.5的市场份额略微超过了IE7和IE8。</p>
+<p>2010年1月21日，Firefox 3.6发布，包含全新的主题显示和Javacript引擎性能和启动优化。到了10月，IE的市场份额首次跌破50%，跌至49.87%。</p>
+<p>2011年2月3日，Chrome 9发布。该版本包含对WebGL的支持和Chrome Instant以及Chrome网上商店。同一年里，Google发行了7个Chrome的版本，最终在12月15日发布了Chrome 16。同年3月14日，微软发布了IE9。它包含一个全新的界面以及对SVG的基本支持和对HTML5视频的部分支持。它仅能运行在Windows Vista、Windows 7和WIndowsPhone 7上。Firefox吸收了Chrome快速发布的概念，在6月21日发布了Firefox 5.0，距离上一个版本发布仅有6周。Mozilla全年创建了另外四个整数版本，2011年12月20日完成了Firefox 9的发布。对于那些需要长期支持的人，Mozilla在2012年1月31日发布了Firefox 10的扩展支持版本（ESR）版本。在常规版本的基础上，Firefox ESR会收到大约一年的常规安全更新以及偶尔的新功能和性能更新，此后会给予12周的宽限期，然后再停止支持该版本。Firefox和Chrome之间的竞争愈发变得激烈。</p>
+<p>2012年2月15日，Chrome 17发布。3月21日，StatCounter报告Chrome的市场份额略微超过了IE成为了世界上使用最广泛的浏览器。但这只是因为IE正处于低谷，Chrome正处于一个高峰。在7月4日之前的工作日，IE的市场份额都比Chrome略微领先。同时，Net Application报告IE市场份额稳居第一，Chrome超过了Firefox成为第二。为了响应Chrome的流行，苹果停止了Windows下Safari的开发。同年，IE10随Windows 8和WindowsPhone 8发布。</p>
+<p>2013年2月，鉴于WebKit在移动浏览器中的普及，Opera Software停止了其自己的Presto引擎。Opera 12系列浏览器是最后一个使用Presto的浏览器，其后继产品使用WebKit引擎。9月17日，IE11发布，支持的平台和IE10相同。</p>
+<p>在这个时代，所有主要的网络浏览器都实现了对HTML5视频的支持。但是，不同的浏览器支持的编解码器也有所不同。当前版本的Chrome和Firefox支持Theora，H.264和VP8版本的WebM。较早版本的Firefox忽略了H.264，因为它是专有的编解码器，但它从Android的版本17和Windows的版本20开始提供该功能。IE和Safari仅提供H.264支持，但是Theora和VP8编解码器可以手动安装在桌面版本上。</p>
+<p>2015年，大势已去，Microsoft停止开发IE的新版本。至此，Chrome取代了所有其他浏览器，成为市场份额最高的浏览器。但微软没有就此死心。随着Windows 10的发布，微软开发了新的Edge浏览器。但该浏览器直到2018年都没有太大的人气。</p>
+<p>2016年1月12日，微软停止支持旧版的IE浏览器。</p>
+<p>2017年，IE、Firefox、Opera的市场份额都下降了5%左右，Chrome霸占了60%的市场份额。2017年5月26日，前Mozilla首席技术官Andreas Gal公开表示Google Chrome赢得了第二次浏览器大战。</p>
+<p>第二次浏览器大战落幕了。</p>
+<h1 id="余波-2017至今"><a href="#余波-2017至今" class="headerlink" title="余波(2017至今)"></a>余波(2017至今)</h1><p>2018年，微软宣布：由于Chrome的成功，新的Edge浏览器将会采用Google的Chromium内核和Blink渲染引擎。</p>
+<p>2020年1月5日，基于Chromium内核的新版Edge发布。</p>
+<p>2020年8月17日，微软宣布将于2021年3月9日停止对旧版Edge的支持。</p>
+<h1 id="回首"><a href="#回首" class="headerlink" title="回首"></a>回首</h1><p>回首两次大战，看看胜者和败者，道理很简单。败者都是死于闭塞和固步自封，胜者都是胜在开放自由、尊重标准、紧跟技术进步。这个世界是趋向自由和开放的，落后于时代是注定要灭亡的。</p>
+<p>如今Web的未来仍不明朗。新一轮的大战是否会开始？Chrome又是否会从屠龙勇士变成龙？这一切都还不好说，只能期待未来会有一个开放的Web、标准化的Web、进步的Web。</p>
+<p><img src="BrowserUsageShare.png" alt="2008年至2019年Web浏览器的使用份额(数据来自StatCounter)"></p>
+<hr>
+<p>完结撒花🎉</p>
+
+    </div>
+
+    
+    
+    
+
+      <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/Web/" rel="tag"># Web</a>
+              <a href="/tags/%E5%8E%86%E5%8F%B2/" rel="tag"># 历史</a>
+          </div>
+
+        
+
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/posts/%E6%89%AC%E5%B7%9E%E5%8D%81%E6%97%A5%E8%AE%B0/" rel="prev" title="扬州十日记">
+      <i class="fa fa-chevron-left"></i> 扬州十日记
+    </a></div>
+      <div class="post-nav-item">
+    <a href="/posts/%E4%B9%9D%E5%8D%81%E4%B9%9D%E5%AE%B6%E4%BA%89%E9%B8%A3%E8%AE%B0/" rel="next" title="九十九家争鸣记">
+      九十九家争鸣记 <i class="fa fa-chevron-right"></i>
+    </a></div>
+    </div>
+      </footer>
+    
+  </article>
+  
+  
+  
+
+  </div>
+
+
+          </div>
+          
+    <div class="comments" id="valine-comments"></div>
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let activeClass = CONFIG.comments.activeClass;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <p class="site-author-name" itemprop="name">luisleee</p>
+  <div class="site-description" itemprop="description"></div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">18</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+            <a href="/categories/">
+          
+        <span class="site-state-item-count">3</span>
+        <span class="site-state-item-name">分类</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+            <a href="/tags/">
+          
+        <span class="site-state-item-count">20</span>
+        <span class="site-state-item-name">标签</span></a>
+      </div>
+  </nav>
+</div>
+  <div class="links-of-author motion-element">
+      <span class="links-of-author-item">
+        <a href="https://github.com/luisleee" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;luisleee" rel="noopener" target="_blank"><i class="fa fa-fw fa-github"></i>GitHub</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="mailto:luisleee2020@outlook.com" title="E-Mail → mailto:luisleee2020@outlook.com" rel="noopener" target="_blank"><i class="fa fa-fw fa-envelope"></i>E-Mail</a>
+      </span>
+  </div>
+
+
+  <div class="links-of-blogroll motion-element">
+    <div class="links-of-blogroll-title">
+      <i class="fa fa-fw fa-link"></i>
+      Links
+    </div>
+    <ul class="links-of-blogroll-list">
+        <li class="links-of-blogroll-item">
+          <a href="https://github.com/" title="https:&#x2F;&#x2F;github.com&#x2F;" rel="noopener" target="_blank">Github</a>
+        </li>
+        <li class="links-of-blogroll-item">
+          <a href="https://oi-14.github.io/" title="https:&#x2F;&#x2F;oi-14.github.io&#x2F;" rel="noopener" target="_blank">OIer-14</a>
+        </li>
+    </ul>
+  </div>
+
+      </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+<div class="copyright">
+  
+  &copy; 2020 – 
+  <span itemprop="copyrightYear">2021</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">luisleee</span>
+</div>
+  <div class="powered-by">由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> 强力驱动 v5.4.0
+  </div>
+  <span class="post-meta-divider">|</span>
+  <div class="theme-info">主题 – <a href="https://mist.theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Mist</a> v7.7.1
+  </div>
+
+        
+
+
+
+
+
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="/lib/anime.min.js"></script>
+
+<script src="/js/utils.js"></script>
+
+
+<script src="/js/schemes/muse.js"></script>
+
+
+<script src="/js/next-boot.js"></script>
+
+<script src="/js/bookmark.js"></script>
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+
+<script>
+NexT.utils.loadComments(document.querySelector('#valine-comments'), () => {
+  NexT.utils.getScript('//unpkg.com/valine/dist/Valine.min.js', () => {
+    var GUEST = ['nick', 'mail', 'link'];
+    var guest = 'nick,mail';
+    guest = guest.split(',').filter(item => {
+      return GUEST.includes(item);
+    });
+    new Valine({
+      el: '#valine-comments',
+      verify: false,
+      notify: false,
+      appId: 'mxCELpGAR7kmpq8gRBfpE1lm-gzGzoHsz',
+      appKey: 'VfU5GjPqaGR1srwNKeNnEfG5',
+      placeholder: "Say something interesting",
+      avatar: 'mm',
+      meta: guest,
+      pageSize: '10' || 10,
+      visitor: true,
+      lang: '' || 'zh-cn',
+      path: location.pathname,
+      recordIP: false,
+      serverURLs: ''
+    });
+  }, window.Valine);
+});
+</script>
+
+</body>
+</html>
